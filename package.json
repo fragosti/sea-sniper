@@ -5,11 +5,17 @@
   "author": "fragosti",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -b",
-    "tsc": "tsc"
+    "start": "node -r dotenv/config index.js"
   },
-  "devDependencies": {
-    "tslint": "^6.1.2",
-    "typescript": "^3.8.3"
+  "devDependencies": {},
+  "dependencies": {
+    "@0x/subproviders": "^6.0.8",
+    "@0x/utils": "^5.4.1",
+    "bignumber.js": "^9.0.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.0",
+    "opensea-js": "^1.1.5",
+    "ramda": "^0.27.0",
+    "web3": "^1.2.7"
   }
 }
