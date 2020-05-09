@@ -25,7 +25,7 @@ const fetchOrdersAsync = async () => {
     owner: BNOLAN_ADDRESS,
     asset_contract_address: CRYPTO_VOXEL_ADDRESS,
     side: OrderSide.Sell,
-    // order_by: 'eth_price',
+    order_by: 'eth_price',
     limit: 100,
   })
   return orders;
