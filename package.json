@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "fragosti",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc -b",
+    "tsc": "tsc"
+  },
   "devDependencies": {
     "tslint": "^6.1.2",
     "typescript": "^3.8.3"
