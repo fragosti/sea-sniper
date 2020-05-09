@@ -1,0 +1,11 @@
+{
+  "name": "sea-sniper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "fragosti",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^6.1.2",
+    "typescript": "^3.8.3"
+  }
+}
