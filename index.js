@@ -10,7 +10,7 @@ const { askAsync, sleepAsync } = require('./util');
 
 const BNOLAN_ADDRESS = '0x2d891ed45c4c3eab978513df4b92a35cf131d2e2';
 const CRYPTO_VOXEL_ADDRESS = '0x79986af15539de2db9a5086382daeda917a9cf0c'
-const MAX_PRICE_ETH = 1.1e18;
+const MAX_PRICE_ETH = 2.5e18;
 
 const seaport = new OpenSeaPort(provider);
 seaport.gasPriceAddition = new BigNumber(10);
@@ -21,9 +21,10 @@ seaport.addListener(EventType.TransactionCreated, ({ transactionHash }) => {
 
 const fetchOrdersAsync = async () => {
   const { orders } = await seaport.api.getOrders({
-    maker: BNOLAN_ADDRESS,
-    owner: BNOLAN_ADDRESS,
+    // maker: BNOLAN_ADDRESS,
+    // owner: BNOLAN_ADDRESS,
     asset_contract_address: CRYPTO_VOXEL_ADDRESS,
+    // token_id: 3187,
     side: OrderSide.Sell,
     order_by: 'eth_price',
     limit: 100,
