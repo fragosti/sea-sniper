@@ -5,7 +5,7 @@ It is currently configured to look for cheap CryptoVoxels when they are created.
 
 ## Env
 
-You need to provide some ENV vars.
+You need to provide some ENV vars in an `.env` file.
 
 ```
 ETHEREUM_RPC_URL=<>
